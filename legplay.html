@@ -1,0 +1,47 @@
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="Brady">
+  <h1> Brady, in full Thomas Edward Patrick Brady, Jr., (born August 3, 1977, San Mateo, California, U.S.), American gridiron football quarterback who led his teams to a record seven Super Bowl victories (2002, 2004, 2005, 2015, 2017, 2019, and 2021) and was named the game's Most Valuable Player (MVP) five times </h1>
+</div>
+    <div style="text-align:center">
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br><br>
+      <video id="video1" width="420">
+        <source src="https:/rr4---sn-8xgp1vo-ab5z.googlevideo.com/videoplayback?expire=1644254466&ei=ogABYrv-CYf18gSen5fACQ&ip=107.152.146.208&id=o-AHBx2O1nfqMf4CYvhrvEGZiZoPS1d6TOEdwAVzxvE13R&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&gir=yes&clen=1031491&ratebypass=yes&dur=13.096&lmt=1644011714736444&fexp=24001373,24007246&c=ANDROID&txp=5530434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgLM8nIz5Xw6UHuVMG5hL-y8XkemwzaS9Pa5TIrFD-jWgCIQCBxdT1esrhuxgXQfaJzP-HCGGuXEBO5a777Cy1-rc2Mw%3D%3D&title=Tom%20Brady%E2%80%99s%20first%20and%20last%20pass&redirect_counter=1&rm=sn-ab5eez7z&req_id=98e1b76ddcbaa3ee&cms_redirect=yes&ipbypass=yes&mh=8-&mip=72.68.77.83&mm=31&mn=sn-8xgp1vo-ab5z&ms=au&mt=1644232628&mv=m&mvi=4&pl=17&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhALBQfhteSvH9mP5MpORG0V1s-A3LLgRNxTBzDY4QtfrOAiEAmLpKzfkfTZV-a9ZiSew9kr7pEEjFFYw4fb5NHKyS9fo%3D" type="video/mp4">
+
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <script>
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+    }
+
+    function makeBig() {
+        myVideo.width = 560;
+    }
+
+    function makeSmall() {
+        myVideo.width = 320;
+    }
+
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+<html>
+<head>
+      <link rel="stylesheet" href="style.css" />
+  <title>Hall of fame</title>
+
+</head>
+<body>
+
+<body class"photo">
+
+   <ul>
+  <li><a href="index.html ">Home</a></li>
+  <li><a href="HOF.html">Hall of fame</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">legondary plays</a>
+    <div class="dropdown-content">
+       <a href="legplay.html">Link 1</a>
+      <a href="HOF2.html">Link 2</a>
+      <a href="HOF3.html">link 3</a>
+
+    </div>
+  </li>
+</ul>
+<div class="Brady">
+  <h1> </h1>
+</div>
+    <div style="text-align:center">
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br><br>
+      <video id="video1" width="420">
+        <source src="C:\Users\Sharon\Downloads\#5 O.J. Simpson Runs for 273 Yards _ Top 10 Thanksgiving Day Moments _ NFL Films.mp4">
+
+
+      </video>
+    </div>
+
+    <script>
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+    }
+
+    function makeBig() {
+        myVideo.width = 560;
+    }
+
+    function makeSmall() {
+        myVideo.width = 320;
+    }
+
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+    </script>
+</body>
+</html>

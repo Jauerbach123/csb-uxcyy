@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+       <ul>
+  <li><a href="index.html ">Home</a></li>
+  <li><a href="HOF.html">Hall of Fame</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">legondary plays</a>
+    <div class="dropdown-content">
+       <a href="legplay.html">Link 1</a>
+      <a href="HOF2.html">Link 2</a>
+      <a href="HOF3.html">link 3</a>
+    </div>
+  </li>
+</ul>
+  <title>Hall of fame</title>
+  <div class="Brady">
+    <h1> That season, Mahomes threw for 5,097 yards, 50 touchdowns, and 12 interceptions. He became the only quarterback in history to throw for over 5,000 yards in a single season in both college and in the NFL </h1>
+  </div>
+      <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="C:\Users\Sharon\Downloads\Peyton Manning's First  (7).mp4"type="video/mp4">
+
+          Your browser does not support HTML video.
+        </video>
+      </div>
+
+      <script>
+      var myVideo = document.getElementById("video1");
+
+      function playPause() {
+        if (myVideo.paused)
+          myVideo.play();
+        else
+          myVideo.pause();
+      }
+
+      function makeBig() {
+          myVideo.width = 560;
+      }
+
+      function makeSmall() {
+          myVideo.width = 320;
+      }
+
+      function makeNormal() {
+          myVideo.width = 420;
+      }
+      </script>
+</head>
+<body>
+
+</body>
+</html>
